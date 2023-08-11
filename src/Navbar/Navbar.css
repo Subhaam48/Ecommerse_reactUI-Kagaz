@@ -1,0 +1,84 @@
+/* Navbar.css */
+*{
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  /* background-color: #333; */
+  background: rgb(11,0,36);
+background: linear-gradient(90deg, rgba(158,0,255,1) 0%, rgb(202, 35, 194) 35%, rgba(158,0,255,1) 100%);
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.cartMenu{
+  margin-top: 10px;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.brand-name {
+  width: 100px;
+  top: 60px;
+  left: -10px;
+  font-size: 1.2rem;
+  color: #570f54;
+  position: absolute;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+}
